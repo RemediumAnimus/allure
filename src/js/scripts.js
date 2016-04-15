@@ -35,8 +35,6 @@ $(document).ready(function() {
                 }
 
                 mass.unshift(0);
-
-                console.log(mass);
             }
 
             timer = setTimeout(function(){
@@ -46,7 +44,6 @@ $(document).ready(function() {
                     counter++;
                 } else {
                     mass = [];
-                    console.log(counter);
                     counter = 0;
                     maxLength = 0;
                     clearTimeout(timer);
