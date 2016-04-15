@@ -1,0 +1,436 @@
+@import "mixins";
+$font-path: '../fonts';
+$img-path: '../img';
+$tmp-path: '../img/tmp';
+
+$yellow: #ffdd2e;
+$black: #0c0c0c;
+
+$acr: 'TheNorthernBlockAcrom', arial, sans-serif;
+$acr-m: 'TheNorthernBlockAcromMedium', arial, sans-serif;
+$acr-b: 'TheNorthernBlockAcromBold', arial, sans-serif;
+$acr-eb : 'TheNorthernBlockAcromExtraBold', arial, sans-serif;
+$bodon : 'BodoniPosterC', arial, sans-serif;
+
+@font-face {
+    font-family: 'TheNorthernBlockAcrom';
+    src: url('#{$font-path}/TheNorthernBlockAcrom.eot');
+    src: url('#{$font-path}/TheNorthernBlockAcrom.eot') format('embedded-opentype'),
+         url('#{$font-path}/TheNorthernBlockAcrom.woff2') format('woff2'),
+         url('#{$font-path}/TheNorthernBlockAcrom.woff') format('woff'),
+         url('#{$font-path}/TheNorthernBlockAcrom.ttf') format('truetype'),
+         url('#{$font-path}/TheNorthernBlockAcrom.svg#TheNorthernBlockAcrom') format('svg');
+}
+
+@font-face {
+    font-family: 'TheNorthernBlockAcromMedium';
+    src: url('#{$font-path}/TheNorthernBlockAcromMedium.eot');
+    src: url('#{$font-path}/TheNorthernBlockAcromMedium.eot') format('embedded-opentype'),
+         url('#{$font-path}/TheNorthernBlockAcromMedium.woff2') format('woff2'),
+         url('#{$font-path}/TheNorthernBlockAcromMedium.woff') format('woff'),
+         url('#{$font-path}/TheNorthernBlockAcromMedium.ttf') format('truetype'),
+         url('#{$font-path}/TheNorthernBlockAcromMedium.svg#TheNorthernBlockAcromMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'TheNorthernBlockAcromExtraBold';
+    src: url('#{$font-path}/TheNorthernBlockAcromExtraBold.eot');
+    src: url('#{$font-path}/TheNorthernBlockAcromExtraBold.eot') format('embedded-opentype'),
+         url('#{$font-path}/TheNorthernBlockAcromExtraBold.woff2') format('woff2'),
+         url('#{$font-path}/TheNorthernBlockAcromExtraBold.woff') format('woff'),
+         url('#{$font-path}/TheNorthernBlockAcromExtraBold.ttf') format('truetype'),
+         url('#{$font-path}/TheNorthernBlockAcromExtraBold.svg#TheNorthernBlockAcromExtraBold') format('svg');
+}
+
+@font-face {
+    font-family: 'TheNorthernBlockAcromBold';
+    src: url('#{$font-path}/TheNorthernBlockAcromBold.eot');
+    src: url('#{$font-path}/TheNorthernBlockAcromBold.eot') format('embedded-opentype'),
+         url('#{$font-path}/TheNorthernBlockAcromBold.woff2') format('woff2'),
+         url('#{$font-path}/TheNorthernBlockAcromBold.woff') format('woff'),
+         url('#{$font-path}/TheNorthernBlockAcromBold.ttf') format('truetype'),
+         url('#{$font-path}/TheNorthernBlockAcromBold.svg#TheNorthernBlockAcromBold') format('svg');
+}
+
+@font-face {
+    font-family: 'BodoniPosterC';
+    src: url('#{$font-path}/BodoniPosterC.eot');
+    src: url('#{$font-path}/BodoniPosterC.eot') format('embedded-opentype'),
+         url('#{$font-path}/BodoniPosterC.woff2') format('woff2'),
+         url('#{$font-path}/BodoniPosterC.woff') format('woff'),
+         url('#{$font-path}/BodoniPosterC.ttf') format('truetype'),
+         url('#{$font-path}/BodoniPosterC.svg#BodoniPosterC') format('svg');
+}
+
+
+body {
+
+}
+
+div {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.n-container {
+  max-width: 1208px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  font-family: $acr;
+  font-size: 13px;
+}
+
+.page {
+  overflow: hidden;
+}
+
+.n-header {
+
+  .n-container {
+    overflow: hidden;
+    height: 118px;
+    font-family: $acr-m;
+  }
+	
+  &__nav {
+    float: left;
+    text-transform: uppercase;
+    height: 100%;
+
+    ul {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      li {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 25px;
+
+        a {
+
+          span {
+            position: relative;
+
+            &:hover {
+              &:after {
+                opacity: 1;
+              }
+            }
+
+            &:after {
+              display: block;
+              content: '';
+              width: 100%;
+              height: 2px;
+              background: #000;
+              position: absolute;
+              left: 0;
+              bottom: -8px;
+              opacity: 0;
+              @include transition();
+            }
+          }
+        }
+      }
+    }
+  }
+	
+  &__logo {
+    float: left;
+    display: table;
+    height: 100%;
+    margin-left: 32px;
+
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
+
+      span {
+        display: block;
+        width: 116px;
+        height: 87px;
+        background: url("#{$img-path}/logo.png");
+      }
+    }
+  }
+  
+  &__other {
+    float: right;
+    height: 100%;
+    text-transform: uppercase;
+
+    ul {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      li {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 44px;
+
+        a {
+          span {
+            position: relative;
+
+            &:hover {
+              &:after {
+                opacity: 1;
+              }
+            }
+
+            &:after {
+              display: block;
+              content: '';
+              width: 100%;
+              height: 2px;
+              background: #000;
+              position: absolute;
+              left: 0;
+              bottom: -8px;
+              opacity: 0;
+              @include transition();
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__search {
+    span {
+      padding-left: 24px;
+      text-transform: lowercase;
+
+      &:before {
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: url("#{$img-path}/search.svg");
+        position: absolute;
+        left: 0;
+        top: 1px;
+      }
+    }
+  }
+
+  &__bucket {
+    span {
+      padding-left: 26px;
+
+      &:before {
+        display: block;
+        content: '';
+        width: 15px;
+        height: 14px;
+        background: url("#{$img-path}/bucket.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &__cab {
+    span {
+      padding-left: 22px;
+
+      &:before {
+        display: block;
+        content: '';
+        width: 12px;
+        height: 14px;
+        background: url("#{$img-path}/person.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}//header
+
+.n-main {
+  &__slider {
+    position: relative;
+    &__container {
+
+      .n-slide1 {
+        background: url("#{$tmp-path}/slider1.png") no-repeat;
+        background-size: cover;
+      }
+
+      .n-slide2 {
+        background: url("#{$tmp-path}/slider2.png") no-repeat;
+        background-size: cover;
+      }
+
+      .n-slide3 {
+        background: url("#{$tmp-path}/slider3.png") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &__slide {
+      height: 660px;
+      text-align: center;
+
+      &__container {
+        display: table;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        max-width: 860px;
+        margin: auto;
+
+        p {
+          display: table-cell;
+          vertical-align: middle;
+          font-size: 96px;
+          font-family: $bodon;
+          text-transform: uppercase;
+          color: #fff;
+        }
+      }
+    }
+
+    &__arrL {
+      height: 360px;
+      width: 480px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: -380px;
+      z-index: 1;
+      cursor: pointer;
+      @include transition($time: 0.25s, $function: ease-out);
+
+      img:first-child {
+        position: absolute;
+        left: 0;
+        right: 0;
+        filter: gray; /* IE6-9 */
+        filter: grayscale(100%); /* Microsoft Edge and Firefox 35+ */
+        -webkit-filter: grayscale(100%); /* Google Chrome, Safari 6+ & Opera 15+ */
+        opacity: 0;
+        @include transition($time: 0.55s, $function: linear);
+      }
+
+      &:hover {
+        left: -260px;
+        img:first-child {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__arrR {
+      height: 360px;
+      width: 480px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: -380px;
+      z-index: 1;
+      cursor: pointer;
+      @include transition($time: 0.25s, $function: ease-out);
+
+      img:first-child {
+        position: absolute;
+        left: 0;
+        right: 0;
+        filter: gray; /* IE6-9 */
+        filter: grayscale(100%); /* Microsoft Edge and Firefox 35+ */
+        -webkit-filter: grayscale(100%); /* Google Chrome, Safari 6+ & Opera 15+ */
+        opacity: 0;
+        @include transition($time: 0.55s, $function: linear);
+      }
+
+      &:hover {
+        right: -260px;
+        img:first-child {
+          opacity: 1;
+        }
+      }
+    }
+    
+    .n-animH {
+      display: none;
+      span {
+        display: inline-block;
+      }
+      i {
+        display: inline-block;
+        font-style: normal;
+      }
+    }
+
+    .n-effect {
+      -webkit-perspective: 300px;
+      -moz-perspective: 300px;
+      perspective: 300px;
+      span {
+        display: inline-block;
+      }
+      i {
+        display: inline-block;
+        font-style: normal;
+      }
+
+      .is-hidden {
+        opacity: 0;
+        -webkit-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+      }
+
+      .is-visible {
+        opacity: 1;
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-animation: cd-rotate-1-in 1.7s ;
+        -moz-animation: cd-rotate-1-in 1.7s;
+        animation: cd-rotate-1-in 1.7s;
+        animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);
+      }
+
+      @-webkit-keyframes cd-rotate-1-in {
+        0% {
+          -webkit-transform: rotatex(180deg);
+          opacity: 0;
+        }
+        35% {
+         -webkit-transform: rotateX(120deg);
+          -webkit-transform: rotatey(180deg);
+          opacity: 1;
+          -webkit-transform: translateY(-250%) scale(0.1);
+        }
+        65% {
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: rotatey(0deg);
+          -webkit-transform: rotateX(360deg);
+          opacity: 1;
+        }
+      }
+    }
+  }//slider
+}//n-main
+
+
+	
+
+
