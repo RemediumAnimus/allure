@@ -168,8 +168,6 @@ $(document).ready(function() {
 
         },
         onSlideChangeStart: function(swiper) {
-            var statusNext = false;
-            var statusPrev = false;
 
             for (var i=0; i<swiper.slides.length; i++) {
 	    		var length = swiper.slides[i].className.split(' ').length;
@@ -185,7 +183,14 @@ $(document).ready(function() {
                     $('.n-main__slider__arrR').find('img').each(function(index){
                         $(this).attr('src',src);
                     });
-                    statusNext = true;
+                }
+                if (i==0) {
+                    if (slide == "swiper-slide-next") {
+                        var src = swiper.slides[i+2].getAttribute('data-thumb');
+                        $('.n-main__slider__arrR').find('img').each(function(index){
+                            $(this).attr('src',src);
+                        });
+                    }
                 }
 
                 if (slide == "swiper-slide-prev") {
@@ -193,27 +198,17 @@ $(document).ready(function() {
                     $('.n-main__slider__arrL').find('img').each(function(index){
                         $(this).attr('src',src);
                     });
-                    statusPrev = true;
+                }
+
+                if (i==swiper.slides.length-1) {
+                    if (slide == "swiper-slide-prev") {
+                        var src = swiper.slides[i-2].getAttribute('data-thumb');
+                        $('.n-main__slider__arrL').find('img').each(function(index){
+                            $(this).attr('src',src);
+                        });
+                    }
                 }
 	    	}
-
-            if (!statusNext) {
-
-                var src = swiper.slides[2].getAttribute('data-thumb');
-                 $('.n-main__slider__arrR').find('img').each(function(index){
-                     $(this).attr('src',src);
-                 });
-                status = false
-            }
-
-            if (!statusPrev) {
-                var src = swiper.slides[2].getAttribute('data-thumb');
-                 $('.n-main__slider__arrL').find('img').each(function(index){
-                     $(this).attr('src',src);
-                 });
-                status = false
-            }
-
         },
         onSlideChangeEnd: function(swiper) {
 
