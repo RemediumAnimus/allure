@@ -14,21 +14,27 @@
 	<link rel="stylesheet" href="js/vendor/magnific-popup/animations.css" >
 	<link rel="stylesheet" href="js/vendor/magnific-popup/animations.css" >
 	<link rel="stylesheet" href="js/vendor/swiper/swiper.min.css" >
+	<link rel="stylesheet" href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.css" >
 	<link rel="stylesheet" href="css/styles.css" >
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
     <!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
 	
 </head>
 
 <body>
-
+<div id="medium-indicator"></div>
 	<div class="page">
 
     <div class="n-header">
 		<div class="n-container">
 			<div class="n-header__nav">
-				<ul>
-					<li><a href="#"><span>Новинки</span></a></li>
+				<div class="n-header__burger">
+					<div class="n-line"></div>
+				</div>
+				<ul class="js-menu">
+					<li class="n-nav-active"><a href="#"><span>Новинки</span></a></li>
 					<li><a href="#"><span>Нижнее белье</span></a></li>
 					<li><a href="#"><span>Lookbook</span></a></li>
 					<li><a href="#"><span>Блог</span></a></li>

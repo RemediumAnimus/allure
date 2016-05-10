@@ -14,21 +14,27 @@
 	<link rel="stylesheet" href="js/vendor/magnific-popup/animations.css" >
 	<link rel="stylesheet" href="js/vendor/magnific-popup/animations.css" >
 	<link rel="stylesheet" href="js/vendor/swiper/swiper.min.css" >
+	<link rel="stylesheet" href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.css" >
 	<link rel="stylesheet" href="css/styles.css" >
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
     <!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
 	
 </head>
 
 <body>
-
+<div id="medium-indicator"></div>
 	<div class="page">
 
     <div class="n-header">
 		<div class="n-container">
 			<div class="n-header__nav">
-				<ul>
-					<li><a href="#"><span>Новинки</span></a></li>
+				<div class="n-header__burger">
+					<div class="n-line"></div>
+				</div>
+				<ul class="js-menu">
+					<li class="n-nav-active"><a href="#"><span>Новинки</span></a></li>
 					<li><a href="#"><span>Нижнее белье</span></a></li>
 					<li><a href="#"><span>Lookbook</span></a></li>
 					<li><a href="#"><span>Блог</span></a></li>
@@ -86,9 +92,8 @@
             </div>
             <div class="n-main__slider__slide n-slide2 swiper-slide" data-thumb="img/tmp/slider2-pre.png">
                 <div class="n-main__slider__slide__container">
-                    <p class="n-animH"> Коллекция
-                        Hight up
-                        soul.
+                    <p class="n-animH"> Your infinity
+                        level
                     </p>
                     <p class="n-effect">
 
@@ -97,9 +102,8 @@
             </div>
             <div class="n-main__slider__slide n-slide3 swiper-slide" data-thumb="img/tmp/slider3-pre.png">
                 <div class="n-main__slider__slide__container">
-                    <p class="n-animH"> Коллекция
-                        broken
-                        sanity.
+                    <p class="n-animH"> hello pips
+                        i am superhero
                     </p>
                     <p class="n-effect">
 
@@ -117,14 +121,151 @@
         </div>
     </div>
     <!-- /.n-main__slider -->
+    <div class="n-container">
+        <div class="n-main__items">
+            <div class="n-main__items__top">
+                <div class="n-main__item n-main__item--catalog">
+                    <a href="#" class="n-fit">
+                        <img src="img/catalog.png" alt="">
+                        <div class="n-main__item__header">
+                            <p><span><i>Ката<br/>лог</i></span></p>
+                        </div>
+                        <span class="n-main__item__arrow">
+                            <div class="n-line"></div>
+                        </span>
+                    </a>
+                </div>
+                <div class="n-main__item n-main__item--look">
+                    <a href="#" class="n-fit">
+                        <img src="img/look.png" alt="">
+                        <div class="n-main__item__header">
+                           <p><span><i>Look<br/>Book</i></span></p>
+                        </div>
+                        <span class="n-main__item__arrow">
+                            <div class="n-line"></div>
+                        </span>
+                    </a>
+                </div>
+                <div class="n-main__item n-main__item--order">
+                    <a href="#" class="n-fit">
+                        <img src="img/order.png" alt="">
+                        <div class="n-main__item__header">
+                            <p><span><i>За<br/>каз</i></span></p>
+                        </div>
+                        <span class="n-main__item__arrow n-main__item__arrow--mod">
+                            <div class="n-line"></div>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="n-main__items__bottom">
+                <div class="n-main__item n-main__item--sert">
+                    <a href="#" class="n-fit">
+                        <img src="img/sert.png" alt="">
+                        <div class="n-main__item__header">
+                            <p><span><i>Подарочные<br/>Сертификаты</i></span></p>
+                        </div>
+                        <span class="n-main__item__arrow n-main__item__arrow--mod">
+                            <div class="n-line"></div>
+                        </span>
+                    </a>
+                </div>
+                <div class="n-main__item n-main__item--story">
+                    <a href="#" class="n-fit">
+                        <img src="img/story.png" alt="">
+                        <div class="n-main__item__header">
+                            <p><span><i>Sto<br/>ry</i></span></p>
+                        </div>
+                        <span class="n-main__item__arrow n-main__item__arrow--mod">
+                            <div class="n-line"></div>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /.n-main__items -->
+    </div>
 </div>
+<div class="n-footer">
+	<div class="n-container">
+		<div class="n-footer__items">
+			<div class="n-footer__item">
+				<div class="n-footer__item__header">Компания</div>
+				<ul>
+					<li><a href="#">О Нас</a></li>
+					<li><a href="#">Сотрудничество</a></li>
+					<li><a href="#">Наши регионы</a></li>
+					<li><a href="#">Свяжитесь с нами</a></li>
+				</ul>
+			</div>
+			<div class="n-footer__item">
+				<div class="n-footer__item__header">Опции</div>
+				<ul>
+					<li><a href="#">Подарочные сертификаты</a></li>
+					<li><a href="#">Индивидуальный пошив</a></li>
+				</ul>
+			</div>
+			<div class="n-footer__item">
+				<div class="n-footer__item__header">Информация</div>
+				<ul>
+					<li><a href="#">Гид по размерам</a></li>
+					<li><a href="#">Информация об оплате</a></li>
+					<li><a href="#">Информация о доставке</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
+	<div class="n-footer__bottom">
+		<div class="n-container">
+			<div class="n-footer__socials">
+				<div class="n-footer__vk">
+					<a href="#"></a>
+					<img src="img/vk1.png" alt="">
+					<span>V k o n t a k t e</span>
+					<div class="n-footer__vk__hover">
+						<div class="n-footer__vk__hover__name">
+							<span>V k o n t a k t e</span>
+						</div>
+						<img src="img/vk2.png" alt="">
+					</div>
+				</div>
+				<div class="n-footer__instagram">
+					<a href="#"></a>
+					<img src="img/ins1.png" alt="">
+					<span>i n s t a g r a m</span>
+					<div class="n-footer__instagram__hover">
+						<div class="n-footer__instagram__hover__name">
+							<span>i n s t a g r a m</span>
+						</div>
+						<img src="img/ins2.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="n-footer__bottom__tab">
+				<div class="n-footer__bottom__auth">
+					Все права защищены 2016
+				</div>
+				<div class="n-footer__bottom__skipo">
+					<a href="#">Разработано в <b>SKIPO develop</b></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 
 </body>
-	<!-- Scripts -->
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/maskedPlug/masked.js"></script>
-	<script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<script src="js/vendor/swiper/swiper.jquery.min.js"></script>
-	<script src="js/scripts.js"></script>
+
+<!-- Scripts -->
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/maskedPlug/masked.js"></script>
+<scipt src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></scipt>
+<script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="js/vendor/smartsizer.js"></script>
+<script src="js/vendor/tabby.js"></script>
+<script src="js/vendor/modernizr-custom.js"></script>
+<script src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/map.js"></script>
 </html>

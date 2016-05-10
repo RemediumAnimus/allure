@@ -6,6 +6,8 @@ const sass = require('gulp-sass');
 const rigger = require('gulp-rigger');
 const rimraf = require('rimraf');
 const browserSync = require("browser-sync");
+const headerfooter = require('gulp-headerfooter');
+const fs = require('fs');
 const autoprefixer = require("gulp-autoprefixer");
 const reload = browserSync.reload;
 
@@ -33,7 +35,8 @@ var config = {
 	},
 	tunnel: false,
 	host: 'localhost',
-	port: 9000,
+	port: 9008,
+	reloadDelay: 1000,
 	logPrefix: "Zzz"
 };
 
@@ -51,16 +54,25 @@ gulp.task('clean', function (cb) {
 
 gulp.task('html:build', function () {
 	return gulp.src(path.src.html)
-		.pipe(plumber())
 		.pipe(rigger())
 		.pipe(gulp.dest(path.build.html))
 });
 
 gulp.task('style:build', function () {
 	return gulp.src(path.src.style)
-		.pipe(plumber())
-		.pipe(sass())
-		.pipe(autoprefixer())		
+		.pipe(plumber({
+			errorHandler: function (err) {
+				console.log(err);
+				this.emit('end');
+			}
+		}))
+		.pipe(sass({
+			errorHandler: function (err) {
+				console.log(err);
+				this.emit('end');
+			}
+		}))
+		.pipe(autoprefixer())
 		.pipe(gulp.dest(path.build.css))
 });
 
@@ -77,7 +89,7 @@ gulp.task('build', gulp.series(
 ));
 
 
-gulp.task('watch', function(){	
+gulp.task('watch', function(){
 	gulp.watch(path.watch.html, gulp.series('html:build'));
 	gulp.watch(path.watch.style, gulp.series('style:build'));
 	gulp.watch(path.watch.js, gulp.series('js:build'));
