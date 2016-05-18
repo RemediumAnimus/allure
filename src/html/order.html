@@ -18,62 +18,125 @@
 
             <div class="n-order">
                 <div class="n-order__left">
-                    <div class="n-order__type1">
-                        <div class="n-order__header">
-                            Способ оплаты и доставка
-                        </div>
-                        <div class="n-order__checks">
-                            <div class="n-order__check">
-                                <label for="">
-                                    <input type="radio"><div></div><span>Картой</span>
-                                </label>
-                            </div>
-                            <div class="n-order__check">
-                                <label for="">
-                                    <input type="radio"><div></div><span>Электронные деньги</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="n-order__fields">
-                            <div class="n-order__field n-order__field--t1">
-                                <div class="n-order__field__block">
-                                    <div class="n-option n-option-cart">
-                                        <select name="" id="cart">
-                                            <option value="">Maestro</option>
-                                            <option value="">Mastercard</option>
-                                            <option value="">Visa</option>
-                                        </select>
+                    <div class="tabs tabs-content">
+                        <div class="n-order__tab n-type1 active">
+                            <form action="" id="n-data">
+                                <div class="n-order__section">
+                                    <div class="n-order__field n-order__field--t0">
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="E-mail:" class="rfield">
+                                        </div>
+                                    </div>
+                                    <div class="n-order__field n-order__field--t4">
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Имя:" class="rfield">
+                                        </div>
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Фамилия:" class="rfield">
+                                        </div>
+                                    </div>
+                                    <div class="n-order__field n-order__field--t0">
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Телефон:" class="rfield">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="n-order__field__block">
-                                    <input type="text" placeholder="Срок действия карты:">
+                                <!--/n-order__fields-->
+                                <div class="n-order__section">
+                                    <div class="n-order__field n-order__field--t0">
+                                        <div class="n-option n-option-country">
+                                            <select name="" id="country">
+                                                <option value="">Россия</option>
+                                                <option value="">Америка</option>
+                                                <option value="">Европа</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="n-order__field n-order__field--t4">
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Город:" class="rfield">
+                                        </div>
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Индекс:" class="rfield">
+                                        </div>
+                                    </div>
+                                    <div class="n-order__field n-order__field--t5">
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Улица:" class="rfield">
+                                        </div>
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Дом:" class="rfield">
+                                        </div>
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Корпус:" class="rfield">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="n-order__field n-order__field--t2 n-info">
-                                <div class="n-order__field__block">
-                                    <input type="text" placeholder="Номер карты:">
-                                </div>
-                                <div class="n-order__field__block">
-                                    <input type="text" placeholder="CVV:">
-                                </div>
-                            </div>
+                                <!--/n-order__fields-->
+                            </form>
                         </div>
-                        <!--/n-order__fields-->
+                        <!--/n-order__tab-->
+                        <div class="n-order__tab n-type2">
+                            <form action="" id="n-buy">
+                                <div class="n-order__header">
+                                    Способ оплаты и доставка
+                                </div>
+                                <div class="n-order__checks">
+                                    <div class="n-order__check one-of">
+                                        <label for="">
+                                            <input type="radio" checked><div></div><span>Картой</span>
+                                        </label>
+                                    </div>
+                                    <div class="n-order__check one-of">
+                                        <label for="">
+                                            <input type="radio"><div></div><span>Электронные деньги</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="n-order__fields">
+                                    <div class="n-order__field n-order__field--t1">
+                                        <div class="n-order__field__block">
+                                            <div class="n-option n-option-cart">
+                                                <select name="" id="cart">
+                                                    <option value="">Maestro</option>
+                                                    <option value="">Mastercard</option>
+                                                    <option value="">Visa</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Срок действия карты:" class="rfield">
+                                        </div>
+                                    </div>
+                                    <div class="n-order__field n-order__field--t2">
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="Номер карты:" class="rfield">
+                                        </div>
+                                        <div class="n-order__field__block">
+                                            <input type="text" placeholder="CVV:" class="rfield">
+                                        </div>
+                                        <i class="n-info" title="После добавления или изменения адреса подписки вам будет выслан код подтверждения. Подписка будет неактивной до ввода кода подтверждения"></i>
+                                    </div>
+                                </div>
+                                <!--/n-order__fields-->
 
-                        <div class="n-order__field n-order__field--t3">
-                            <div class="n-order__field__block">
-                                <p class="n-order__field__send"><span class="n-info">Доставка курьером</span></p>
-                            </div>
-                            <div class="n-order__field__block">
-                                <div class="n-option n-option-city">
-                                    <select name="" id="city">
-                                        <option value="">Москва</option>
-                                        <option value="">Санкт - Петербург</option>
-                                        <option value="">Интерстеллар</option>
-                                    </select>
+                                <div class="n-order__field n-order__field--t3">
+                                    <div class="n-order__field__block">
+                                        <p class="n-order__field__send"><span>Доставка курьером</span><i class="n-info" title="После добавления или изменения адреса подписки вам будет выслан код подтверждения. Подписка будет неактивной до ввода кода подтверждения"></i></p>
+                                    </div>
+                                    <div class="n-order__field__block">
+                                        <div class="n-option n-option-city">
+                                            <select name="" id="city">
+                                                <option value="">Москва</option>
+                                                <option value="">Санкт - Петербург</option>
+                                                <option value="">Интерстеллар</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
+                        <!--/n-order__tab-->
                     </div>
                 </div>
                 <!-- /.n-order__left -->
@@ -144,9 +207,15 @@
                             <li><span>25679Р</span></li>
                         </ul>
                     </div>
-                    <a href="#" class="n-detail__btn">
-                        <span>Оформить заказ</span>
-                    </a>
+
+                    <div class="n-order__btns">
+                        <a href="#" class="n-detail__btn n-data active disabled">
+                            <span>Оформить заказ</span>
+                        </a>
+                        <a href="#" class="n-detail__btn n-buy">
+                            <span>Перейти к оплате</span>
+                        </a>
+                    </div>
                 </div>
                 <!-- /.n-order__right -->
             </div>
