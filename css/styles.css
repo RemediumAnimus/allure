@@ -1602,6 +1602,9 @@ div {
         -moz-transition: all 0.15s linear; }
         .n-catalog__list__item__eye:hover {
           opacity: 0.8 !important; }
+        @media all and (max-width: 1280px) {
+          .n-catalog__list__item__eye {
+            opacity: 1; } }
       .n-catalog__list__item__bucket {
         width: 54px;
         height: 58px;
@@ -1614,6 +1617,9 @@ div {
         transition: all 0.15s linear;
         -webkit-transition: all 0.15s linear;
         -moz-transition: all 0.15s linear; }
+        @media all and (max-width: 1280px) {
+          .n-catalog__list__item__bucket {
+            opacity: 1; } }
         .n-catalog__list__item__bucket:after {
           content: '';
           display: block;
