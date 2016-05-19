@@ -70,6 +70,16 @@ html, body {
   height: 100%;
 }
 
+body {
+  height: 100%;
+  min-height: 100%;
+  opacity: 0;
+}
+
+.loaded {
+  opacity: 1;
+}
+
 div {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -84,6 +94,34 @@ div {
   }
 }
 
+.n-preloader {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+  opacity: 1;
+  display: none;
+
+  &__container {
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.mfp-container {
+
+}
 .mfp-wrap {
   top: 0px;
   bottom: 0;
@@ -200,6 +238,31 @@ div {
 
 .tabs:after {
   clear: both;
+}
+
+.field-warning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  background: #f5f5f5;
+  border: 1px solid #000;
+  overflow: hidden;
+
+  &__cont {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 16px;
+    white-space: nowrap;
+  }
 }
 
 .ui-tooltip {
@@ -497,8 +560,9 @@ div {
   }
 
   .n-detail__left {
-    height: 100%;
+    //height: 100%;
     width: 50%;
+    min-height: 100%;
 
     @media all and (max-width: $mid) {
       width: 45%;
@@ -974,15 +1038,18 @@ div {
     span {
       padding-left: 26px;
 
-      &:before {
+      p {
         display: block;
         content: '';
         width: 15px;
         height: 14px;
-        background: url("#{$img-path}/bucket.svg");
         position: absolute;
-        left: 0;
-        top: 0;
+        left: -5px;
+        top: -5px;
+      }
+
+      &:after {
+        display: none;
       }
 
       b {
@@ -1122,6 +1189,11 @@ div {
   padding: 0px 260px 20px 260px;
   margin-bottom: 45px;
 
+  @media all and (max-width: 1000px) {
+    font-size: 28px;
+    padding: 0px 260px 20px 240px;
+  }
+
   span {
     position: relative;
     display: inline-block;
@@ -1148,7 +1220,6 @@ div {
     position: relative;
     padding: 0px 20px;
     line-height: 120px;
-    height: 852px;
 
     @media all and (max-width: $mid) {
       line-height: 80px;
@@ -1707,7 +1778,7 @@ div {
     &__left {
       float: left;
       width: 35%;
-      padding: 0px 120px 0px 50px;
+      padding: 0px 0px 0px 50px;
 
       @media all and (max-width: $mid) {
         width: auto;
@@ -1855,12 +1926,20 @@ div {
       display: block;
       clear: both;
     }
+
+    &__center {
+      display: table-cell;
+      vertical-align: middle;
+      padding-top: 55px;
+    }
     &__left {
       float: left;
       width: 50%;
-      padding: 100px 60px 20px 120px;
+      padding: 0px 0px 0px 120px;
       position: relative;
+      height: 100%;
       min-height: 600px;
+      display: table;
 
       ul {
         li {
@@ -1880,7 +1959,7 @@ div {
       float: left;
       width: 50%;
       position: relative;
-      height: 600px;
+      height: 100%;
 
       img {
         display: block;
@@ -1896,6 +1975,10 @@ div {
       letter-spacing: 2px;
       font-family: $bodon;
       margin-bottom: 125px;
+
+      &--mod {
+        margin-top: -180px;
+      }
     }
 
     &__header {
@@ -1938,19 +2021,43 @@ div {
       left: 120px;
       bottom: 60px;
       cursor: pointer;
+      @include transition();
 
       .n-line {
         background: #d4d4d4;
+        @include transition();
       }
       &:after {
         border-top: 12px solid transparent;
         border-left: 12px solid #d4d4d4;
         border-bottom: 12px solid transparent;
+        @include transition();
       }
       &:before {
         border-top: 7px solid transparent;
         border-left: 7px solid #fff;
         border-bottom: 7px solid transparent;
+        @include transition();
+      }
+
+      &:hover {
+        bottom: 50px;
+
+        .n-line {
+          background: #000;
+        }
+
+        &:after {
+          border-top: 12px solid transparent;
+          border-left: 12px solid #000;
+          border-bottom: 12px solid transparent;
+        }
+
+        &:before {
+          border-top: 7px solid transparent;
+          border-left: 7px solid #000;
+          border-bottom: 7px solid transparent;
+        }
       }
     }
   }//menu
@@ -2127,6 +2234,12 @@ div {
       text-transform: uppercase;
       padding: 17px 0px;
       cursor: pointer;
+      @include transition();
+      
+      &:hover {
+        background: #000;
+        color: #fff;
+      }
     }
 
     &__carts {
@@ -2150,10 +2263,18 @@ div {
     }
     .n-catalog__menu__header {
       left: -182px;
+
+      @media all and (max-width: 1160px) {
+        left: 0;
+      }
     }
 
     .n-catalog__menu__left {
-      padding: 245px 150px 20px 80px;
+      padding: 0px 0px 0px 80px;
+
+      @media all and (max-width: 1160px) {
+        padding: 0;
+      }
       &:after {
         display: block;
         content: '';
@@ -2180,6 +2301,11 @@ div {
       .n-main__item__arrow {
         left: 295px;
         bottom: 110px;
+        @include transition();
+
+        &:hover {
+          bottom: 100px;
+        }
       }
     }
   }
@@ -2297,12 +2423,13 @@ div {
     }
 
     &--fouth {
-      width: 260px;
+      width: 22%;
       float: left;
       height: 526px;
       position: absolute;
       top: 390px;
-      left: 100px;
+      //left: 100px;
+      left: 9%;
       z-index: 2;
 
       &__cont {
@@ -2327,7 +2454,8 @@ div {
       height: 296px;
       position: absolute;
       bottom: 0;
-      left: 360px;
+      //left: 360px;
+      left: 31%;
 
       .n-catalog__cart__header {
         background: #000;
@@ -2343,7 +2471,12 @@ div {
       height: 296px;
       position: absolute;
       bottom: 0;
-      left: 656px;
+      //left: 656px;
+      left: 56%;
+
+      @media all and (max-width: 1000px) {
+        left: 63%;
+      }
 
       .n-catalog__cart__header {
         background: #000;
@@ -2908,6 +3041,15 @@ div {
       &:last-child {
         margin-right: 0;
       }
+
+      .n-catalog__list__item__eye {
+        right: 50px;
+      }
+
+      .n-catalog__list__item__bucket {
+        right: 50px;
+      }
+
       .n-catalog__list__item__pic {
         background-size: cover;
         background-position: center;
@@ -3101,8 +3243,9 @@ div {
     margin: auto;
     top: auto;
     transform: rotate(-90deg);
-    bottom: -40px;
+    bottom: 30px;
     width: 90px;
+    @include transition();
 
     .n-line {
       width: 80px;
@@ -3112,6 +3255,10 @@ div {
       border-top: 9px solid transparent;
       border-right: 10px solid #000;
       border-bottom: 9px solid transparent;
+    }
+
+    &:hover {
+      bottom: 20px;
     }
   }
   &__header {
@@ -3526,6 +3673,13 @@ div {
       }
     }
   }
+
+  &__show {
+    & > div:nth-child(n+4) {
+      display: none;
+      opacity: 0;
+    }
+  }
 }//blog
 
 .n-bucket {
@@ -3860,6 +4014,10 @@ div {
     padding: 160px 70px 220px 70px;
     position: relative;
 
+    @media all and (max-width: $mid) {
+      padding: 160px 70px 220px 0px;
+    }
+
     &:after {
       display: block;
       content: '';
@@ -3936,6 +4094,12 @@ div {
       letter-spacing: 6px;
       color: #fff;
       text-shadow: 0px 3px 38px rgba(0, 0, 0, 0.19);
+
+      @media all and (max-width: $mid) {
+        font-size: 50px;
+        left: -40px;
+        top: 156px;
+      }
     }
 
     #map {
@@ -4360,6 +4524,7 @@ div {
 
     &__block {
       height: 100%;
+      position: relative;
 
       input {
         display: block;
@@ -4637,10 +4802,19 @@ div {
       padding-left: 15px;
       height: 31px;
       background: #f5f5f5;
-      margin: 0px auto 15px auto;
       border-bottom: 1px solid #f5f5f5;
       @include placeholder(#000);
       font-family: $acr-m;
+    }
+  }
+
+  .n-order__field__block {
+    width: 240px;
+    height: 31px;
+    margin: 0px auto 15px auto;
+    
+    .field-warning {
+      text-align: left;
     }
   }
 
@@ -4904,6 +5078,23 @@ div {
     }
   }
 }//lk
+
+.toScroll {
+
+}
+
+.n-topBig {
+  min-height: 600px;
+}
+
+.n-toShow {
+  & > div {
+     &:nth-child(n+10) {
+       opacity: 0;
+       display: none;
+      }
+  }
+}
 
 .n-footer {
   position: absolute;

@@ -22,6 +22,11 @@
     <!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
 	
 </head>
+<div class="n-preloader">
+	<div class="n-preloader__container">
+		<?xml version="1.0" encoding="utf-8"?><svg width='98px' height='98px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ripple"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><g> <animate attributeName="opacity" dur="2s" repeatCount="indefinite" begin="0s" keyTimes="0;0.33;1" values="1;1;0"></animate><circle cx="50" cy="50" r="40" stroke="#afafb7" fill="none" stroke-width="6" stroke-linecap="round"><animate attributeName="r" dur="2s" repeatCount="indefinite" begin="0s" keyTimes="0;0.33;1" values="0;22;44"></animate></circle></g><g><animate attributeName="opacity" dur="2s" repeatCount="indefinite" begin="1s" keyTimes="0;0.33;1" values="1;1;0"></animate><circle cx="50" cy="50" r="40" stroke="#6c6c6e" fill="none" stroke-width="6" stroke-linecap="round"><animate attributeName="r" dur="2s" repeatCount="indefinite" begin="1s" keyTimes="0;0.33;1" values="0;22;44"></animate></circle></g></svg>
+	</div>
+</div>
 
 <body>
 <div id="medium-indicator"></div>
@@ -48,7 +53,20 @@
 			<div class="n-header__other">
 				<ul>
 					<li class="n-header__search"><a href="#"><span><i>Поиск</i></span></a></li>
-					<li class="n-header__bucket"><a href="#"><span><i>Корзина </i><b>( 0 )</b></span></a>
+					<li class="n-header__bucket"><a href="#"><span><i>Корзина </i><b>( 0 )</b>
+						<p id="svg-bucket-cont">
+							<svg width="35px" height="34px" viewBox="-200 -200 1400 1400" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+								<g id="svg-bucket">
+									<path d="M190.657,172.125l-47.717-153H19.125C8.568,19.125,0,27.693,0,38.25s8.568,19.125,19.125,19.125h95.625l38.441,114.75
+										H153l38.25,229.5c0,42.247,34.253,76.5,76.5,76.5h210.375c42.247,0,76.5-34.253,76.5-76.5L612,172.125H190.657z M516.375,401.625
+										c0,21.114-17.136,38.25-38.25,38.25H267.75c-21.133,0-38.25-17.136-38.25-38.25l-31.881-191.25h366.569L516.375,401.625z
+										 M267.75,516.375c-21.133,0-38.25,17.117-38.25,38.25c0,21.114,17.117,38.25,38.25,38.25S306,575.739,306,554.625
+										C306,533.492,288.883,516.375,267.75,516.375z M459,516.375c-21.133,0-38.25,17.117-38.25,38.25
+										c0,21.114,17.117,38.25,38.25,38.25s38.25-17.136,38.25-38.25C497.25,533.492,480.133,516.375,459,516.375z"/>
+								</g>
+							</svg>
+						</p>
+					</span></a>
 					<div class="n-header__bucket__pop">
 						<div class="n-order__items">
 							<div class="n-order__item">
@@ -275,6 +293,7 @@
 
 <!-- Scripts -->
 <script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/scrollSpeed.js"></script>
 <script src="js/vendor/maskedPlug/masked.js"></script>
 <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="js/vendor/swiper/swiper.jquery.min.js"></script>
@@ -283,6 +302,9 @@
 <script src="js/vendor/tabby.js"></script>
 <script src="js/vendor/modernizr-custom.js"></script>
 <script src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="js/vendor/snap.svg-min.js"></script>
+<script src="js/vendor/TweenMax.min.js"></script>
+<script src="js/vendor/plugins/ScrollToPlugin.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/map.js"></script>
 </html>
