@@ -32,6 +32,7 @@ $(window).load(function() {
     } else {
         $('.n-preloader').hide();
         $('body').addClass('loaded');
+        $('body').css('overflow','auto');
     }
     createCookie('referer',1,0);
     console.log(readCookie('referer'));
