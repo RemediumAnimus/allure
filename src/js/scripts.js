@@ -25,6 +25,9 @@ $(window).load(function() {
     if (readCookie('referer') == null){
         $('.n-preloader').show();
         $('.n-preloader').delay(5000).fadeOut("slow");
+        setTimeout(function(){
+            $('body').css('overflow','auto');
+        },5000);
         $('body').addClass('loaded');
     } else {
         $('.n-preloader').hide();

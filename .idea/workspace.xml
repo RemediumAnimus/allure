@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/sass/styles.scss" line="4414" />
+    <bookmark url="file://$PROJECT_DIR$/src/sass/styles.scss" line="4415" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb8672e7-0c06-4adc-98e2-7eb171a27d9d" name="Default" comment="" />
@@ -61,11 +61,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="509">
-                  <caret line="1193" column="30" selection-start-line="1193" selection-start-column="30" selection-end-line="1193" selection-end-column="30" />
+                <state relative-caret-position="311">
+                  <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -81,11 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-446">
-                  <caret line="695" column="9" selection-start-line="695" selection-start-column="9" selection-end-line="695" selection-end-column="9" />
+                <state relative-caret-position="440">
+                  <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -173,9 +173,9 @@
         <option value="$PROJECT_DIR$/js/vendor/scrollSpeed.js" />
         <option value="$PROJECT_DIR$/src/html/catalog.html" />
         <option value="$PROJECT_DIR$/src/html/blog.html" />
-        <option value="$PROJECT_DIR$/src/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/html/lk-settings.html" />
         <option value="$PROJECT_DIR$/src/sass/styles.scss" />
+        <option value="$PROJECT_DIR$/src/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -488,19 +488,19 @@
       <workItem from="1463513079870" duration="19000" />
       <workItem from="1463557570293" duration="25079000" />
       <workItem from="1463595616908" duration="5034000" />
-      <workItem from="1463644517544" duration="18051000" />
+      <workItem from="1463644517544" duration="18670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372990000" />
+    <option name="totallyTimeSpent" value="373609000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-9" width="1930" height="1048" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1" y="-9" width="1930" height="1048" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1632543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1632543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -820,14 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="695" column="9" selection-start-line="695" selection-start-column="9" selection-end-line="695" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/lk-settings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -838,8 +830,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="1193" column="30" selection-start-line="1193" selection-start-column="30" selection-end-line="1193" selection-end-column="30" />
+        <state relative-caret-position="311">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding />
         </state>
       </provider>
