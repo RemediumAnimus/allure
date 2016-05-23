@@ -77,10 +77,10 @@
         }).on('scroll', function() {
             if (scrollY && !scroll) root = $window.scrollTop();
             if (scrollX && !scroll) {
-                root = $window.scrollLeft()
+                root = $window.scrollLeft();
             }
             if (!wheelable) {
-                root = $window.scrollTop();;
+                root = $window.scrollTop();
             }
 
         }).on('resize', function() {

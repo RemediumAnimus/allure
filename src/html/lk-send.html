@@ -18,7 +18,7 @@
 
 			<div class="n-lk">
 				<div class="n-lk__container">
-					<form>
+					<form class="rf" id="n-send">
 						<div class="n-lk__bg"></div>
 						<div class="n-lk__wrap">
 							<div class="n-lk__btns">
@@ -46,7 +46,10 @@
 									Настройка подписки
 								</div>
 								<div class="n-lk__info__letter">
-									<input type="text" placeholder="Ваш e-mail">
+									<div class="n-order__field__block">
+										<input type="text" placeholder="Ваш e-mail" class="rfield empty_field">
+										<div class="field-warning"><div class="field-warning__cont"><span>Заполните поле</span></div></div>
+									</div>
 								</div>
 								<div class="n-lk__info__note">
 									После добавления или изменения адреса подписки вам будет
@@ -55,7 +58,7 @@
 							</div>
 
 							<div class="n-lk__btns">
-								<input type="submit" value="Сохранить" class="n-lk__btn n-lk__btn--save">
+								<input type="submit" value="Сохранить" class="n-lk__btn n-lk__btn--save n-send">
 							</div>
 						</div>
 					</form>

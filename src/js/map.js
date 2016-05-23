@@ -113,6 +113,7 @@ $(document).ready(function() {
         map.setMapTypeId('usroadatlas');
 
     }
-
-    initialize();
+    if ($('#map').length) {
+       initialize();
+    }
 });
