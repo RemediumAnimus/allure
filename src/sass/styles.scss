@@ -73,7 +73,11 @@ html, body {
 body {
   height: 100%;
   min-height: 100%;
+}
+
+.page {
   opacity: 0;
+  @include transition();
 }
 
 .loaded {
@@ -5511,6 +5515,12 @@ div {
        opacity: 0;
        display: none;
       }
+  }
+}
+.n-header__bucket__pop {
+  .n-order__item__btn {
+    width: auto;
+    margin-right: 10px;
   }
 }
 

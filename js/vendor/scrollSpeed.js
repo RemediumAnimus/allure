@@ -2,7 +2,7 @@
 // Source: github.com/ByNathan/jQuery.scrollSpeed
 // Version: 1.0.2
 
-(function($) {
+/*(function($) {
 
     jQuery.scrollSpeed = function(step, speed, easing) {
         
@@ -100,4 +100,4 @@
         return -c * ((t=t/d-1)*t*t*t - 1) + b;
     };
 
-})(jQuery);
+})(jQuery);*/
