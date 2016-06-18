@@ -19,13 +19,47 @@
 	<link rel="stylesheet" href="css/styles.css" >
 
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/vendor/jquery.min.js"></script>
 
 </head>
 <div class="n-preloader">
 	<div class="n-preloader__container">
-		<?xml version="1.0" encoding="utf-8"?><svg width='98px' height='98px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ripple"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><g> <animate attributeName="opacity" dur="2s" repeatCount="indefinite" begin="0s" keyTimes="0;0.33;1" values="1;1;0"></animate><circle cx="50" cy="50" r="40" stroke="#afafb7" fill="none" stroke-width="6" stroke-linecap="round"><animate attributeName="r" dur="2s" repeatCount="indefinite" begin="0s" keyTimes="0;0.33;1" values="0;22;44"></animate></circle></g><g><animate attributeName="opacity" dur="2s" repeatCount="indefinite" begin="1s" keyTimes="0;0.33;1" values="1;1;0"></animate><circle cx="50" cy="50" r="40" stroke="#6c6c6e" fill="none" stroke-width="6" stroke-linecap="round"><animate attributeName="r" dur="2s" repeatCount="indefinite" begin="1s" keyTimes="0;0.33;1" values="0;22;44"></animate></circle></g></svg>
+		<img src="img/rings.svg" />
 	</div>
 </div>
+
+<script>
+	//куки для прелоадера - referer
+function createCookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+if (readCookie('referer') == null){
+    $('.n-preloader').show();
+} else {
+    $('.n-preloader').hide();
+    $('.page').addClass('loaded');
+}
+createCookie('referer',1,0);
+console.log(readCookie('referer'));
+</script>
 
 <body>
 <div id="medium-indicator"></div>
@@ -400,7 +434,6 @@
 </body>
 
 <!-- Scripts -->
-<script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/device.min.js"></script>
 <script src="js/vendor/scrollSpeed.js"></script>
 <script src="js/vendor/jquery.touchSwipe.min.js"></script>

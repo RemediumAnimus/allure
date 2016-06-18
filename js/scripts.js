@@ -1,34 +1,3 @@
-//куки для прелоадера - referer
-function createCookie(name,value,days) {
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime()+(days*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
-    }
-    else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/";
-}
-
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-}
-
-if (readCookie('referer') == null){
-    $('.n-preloader').show();
-} else {
-    $('.n-preloader').hide();
-    $('.page').addClass('loaded');
-}
-createCookie('referer',1,0);
-console.log(readCookie('referer'));
-
 $(window).load(function(){
     setTimeout(function(){
         $('.n-preloader').animate({
@@ -51,6 +20,22 @@ $(document).ready(function() {
                 window.setTimeout(callback, 1000 / 60);
               };
     })();
+
+    function msieversion() {
+
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+        {
+            //alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+            return true;
+        }
+        else  // If another browser, return 0
+        {
+            return false;
+        }
+    }
 
       /*$("html, body").swipe( {
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -292,13 +277,21 @@ $(document).ready(function() {
         return wordTransform.join('');
     }
 
+    var effect;
+    if (msieversion()) {
+        effect = 'slide';
+    } else {
+        effect = 'fade';
+    }
+
     //карусель на главной
     var sliderM = new Swiper('#n-sliderM', {
         speed: 600,
         spaceBetween: 0,
-        effect: "fade",
+        effect: effect,
         nextButton: '.n-main__slider__arrR',
         prevButton: '.n-main__slider__arrL',
+        spaceBetween: 40,
         loop: true,
         runCallbacksOnInit: false,
         onInit: function(swiper) {
