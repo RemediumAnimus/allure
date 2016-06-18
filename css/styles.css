@@ -1443,7 +1443,9 @@ div {
         .n-main__slider__arrR:hover img:first-child {
           opacity: 1; }
     .n-main__slider .n-animH {
-      display: none; }
+      display: none;
+      position: relative;
+      z-index: 100; }
       .n-main__slider .n-animH span {
         display: inline-block; }
       .n-main__slider .n-animH i {

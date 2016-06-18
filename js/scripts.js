@@ -276,19 +276,17 @@ $(document).ready(function() {
 
         return wordTransform.join('');
     }
-
-    var effect;
+    
     if (msieversion()) {
-        effect = 'slide';
-    } else {
-        effect = 'fade';
+        $('.n-animH').css('display','table-cell');
+        $('.n-effect').hide();
     }
 
     //карусель на главной
     var sliderM = new Swiper('#n-sliderM', {
         speed: 600,
         spaceBetween: 0,
-        effect: effect,
+        effect: 'fade',
         nextButton: '.n-main__slider__arrR',
         prevButton: '.n-main__slider__arrL',
         spaceBetween: 40,
@@ -301,8 +299,10 @@ $(document).ready(function() {
 
                 if (slide == "swiper-slide-active") {
                     var text = swiper.slides[i].getElementsByClassName('n-animH')[0].innerHTML;
-                    saveText(text);
-                    animateHead(saveText(),$('.n-effect').eq(i));
+                    if (!msieversion()) {
+                        saveText(text);
+                        animateHead(saveText(), $('.n-effect').eq(i));
+                    }
                 }
 
                 if (slide == "swiper-slide-next") {
@@ -328,7 +328,9 @@ $(document).ready(function() {
 
                 if (slide == "swiper-slide-active") {
                     var text = swiper.slides[i].getElementsByClassName('n-animH')[0].innerHTML;
-                    saveText(text);
+                    if (!msieversion()) {
+                        saveText(text);
+                    }
                 }
 
                 if (slide == "swiper-slide-next") {
@@ -378,7 +380,9 @@ $(document).ready(function() {
                 }
 
                 if (slide == "swiper-slide-active") {
-                    animateHead(saveText(),$('.n-effect').eq(i));
+                    if (!msieversion()) {
+                        animateHead(saveText(), $('.n-effect').eq(i));
+                    }
                 }
 
             }

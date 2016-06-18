@@ -1740,6 +1740,9 @@ div {
     
     .n-animH {
       display: none;
+      position: relative;
+      z-index: 100;
+
       span {
         display: inline-block;
       }

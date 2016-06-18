@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/sass/styles.scss" line="4818" />
+    <bookmark url="file://$PROJECT_DIR$/src/sass/styles.scss" line="4821" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb8672e7-0c06-4adc-98e2-7eb171a27d9d" name="Default" comment="" />
@@ -71,8 +71,8 @@
           <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2574">
-                  <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+                <state relative-caret-position="307">
+                  <caret line="1744" column="0" selection-start-line="1744" selection-start-column="0" selection-end-line="1744" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -101,8 +101,8 @@
           <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="276" column="31" selection-start-line="276" selection-start-column="31" selection-end-line="276" selection-end-column="31" />
+                <state relative-caret-position="176">
+                  <caret line="278" column="4" selection-start-line="278" selection-start-column="4" selection-end-line="278" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -166,12 +166,12 @@
         <option value="$USER_HOME$/Desktop/header.php" />
         <option value="$PROJECT_DIR$/js/vendor/scrollSpeed.js" />
         <option value="$USER_HOME$/Desktop/scripts.js" />
-        <option value="$PROJECT_DIR$/src/sass/styles.scss" />
         <option value="$PROJECT_DIR$/../../github/allure/bucket.html" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/html/__footer.html" />
         <option value="$PROJECT_DIR$/img/rings.svg" />
         <option value="$PROJECT_DIR$/src/html/__header.html" />
+        <option value="$PROJECT_DIR$/src/sass/styles.scss" />
         <option value="$PROJECT_DIR$/src/js/scripts.js" />
       </list>
     </option>
@@ -485,15 +485,15 @@
       <workItem from="1465992109845" duration="2093000" />
       <workItem from="1466281845993" duration="13000" />
       <workItem from="1466281900167" duration="2655000" />
-      <workItem from="1466284823741" duration="427000" />
+      <workItem from="1466284823741" duration="1282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439028000" />
+    <option name="totallyTimeSpent" value="439883000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -731,6 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
           <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -738,14 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -774,10 +767,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="1744" column="0" selection-start-line="1744" selection-start-column="0" selection-end-line="1744" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="276" column="31" selection-start-line="276" selection-start-column="31" selection-end-line="276" selection-end-column="31" />
+        <state relative-caret-position="176">
+          <caret line="278" column="4" selection-start-line="278" selection-start-column="4" selection-end-line="278" selection-end-column="4" />
           <folding />
         </state>
       </provider>
