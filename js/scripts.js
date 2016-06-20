@@ -404,7 +404,7 @@ $(document).ready(function() {
 
     function resetMenu() {
        if (isMobileWidth()) {
-           $('.js-menu').css({'left': $('.js-menu').outerWidth() * -1});
+           $('.js-menu').css({'left': $('.js-menu').outerWidth() * -1 - 30});
        }
     };
 

@@ -415,7 +415,7 @@ div {
   position: relative;
   padding-top: 117px;
   background: #fff;
-  min-width: 768px; }
+  min-width: 700px; }
   .n-pop__cart__inside {
     height: 100%;
     position: relative; }
@@ -545,7 +545,8 @@ div {
     padding: 0px 40px; }
   .n-pop__cart .n-detail__item {
     background: #fff;
-    height: 100%;
+    height: auto;
+    min-height: 700px;
     width: 100%;
     margin-bottom: 0; }
   .n-pop__cart .n-detail__left {
@@ -570,7 +571,7 @@ div {
 .page {
   overflow: hidden;
   padding: 0px 20px;
-  min-width: 768px;
+  min-width: 700px;
   position: relative;
   min-height: 100%; }
   @media all and (max-width: 1150px) {
@@ -585,7 +586,7 @@ div {
   background: #fff;
   width: 100%;
   padding: 0px 10px;
-  min-width: 768px; }
+  min-width: 700px; }
   .n-header .n-container {
     transition: all 0.55s ease-in-out;
     -webkit-transition: all 0.55s ease-in-out;
@@ -931,6 +932,9 @@ div {
     @media all and (max-width: 1000px) {
       .n-header__other {
         width: 30%; } }
+    @media all and (max-width: 768px) {
+      .n-header__other {
+        padding-left: 0; } }
     .n-header__other i {
       font-style: normal; }
       @media all and (max-width: 1000px) {
@@ -1860,6 +1864,9 @@ div {
       height: 100%;
       min-height: 600px;
       display: table; }
+      @media all and (max-width: 768px) {
+        .n-catalog__menu__left {
+          padding: 0; } }
       .n-catalog__menu__left ul li {
         text-transform: uppercase;
         font-family: "TheNorthernBlockAcromBold", arial, sans-serif;
@@ -2443,6 +2450,9 @@ div {
   .n-detail__checks {
     margin-left: 114px;
     height: 30px; }
+    @media all and (max-width: 768px) {
+      .n-detail__checks {
+        margin-left: 75px; } }
     .n-detail__checks:after {
       display: block;
       content: '';
@@ -3380,7 +3390,8 @@ div {
 .n-contacts__tel {
   font-family: "BodoniPosterC", arial, sans-serif;
   font-size: 32px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  line-height: 40px; }
 
 .n-contacts__adress {
   font-family: "TheNorthernBlockAcromMedium", arial, sans-serif;
@@ -3502,6 +3513,9 @@ div {
   padding-top: 43px;
   position: relative;
   z-index: 1; }
+  @media all and (max-width: 768px) {
+    .n-order__left {
+      padding-left: 0; } }
 
 .n-order__right {
   float: left;
@@ -3563,6 +3577,10 @@ div {
     position: absolute;
     right: 0;
     top: 18px; }
+    @media all and (max-width: 768px) {
+      .n-order__item__cost {
+        top: auto;
+        bottom: 12px; } }
   .n-order__item__wrap {
     float: left;
     margin-top: -3px; }

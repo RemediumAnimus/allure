@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/sass/styles.scss" line="4821" />
+    <bookmark url="file://$PROJECT_DIR$/src/sass/styles.scss" line="4845" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb8672e7-0c06-4adc-98e2-7eb171a27d9d" name="Default" comment="" />
@@ -31,7 +31,7 @@
     <favorites_list name="example" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.64159894">
+    <splitter split-orientation="horizontal" split-proportion="0.4498645">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -54,31 +54,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="__header.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="__header.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/html/__header.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="look-book-advanced.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/html/look-book-advanced.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="look-book.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/html/look-book.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+                <state relative-caret-position="132">
+                  <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -94,11 +74,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="blog2.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="blog2.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/html/blog2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+                <state relative-caret-position="792">
+                  <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
                   <folding />
                 </state>
               </provider>
@@ -118,17 +98,17 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38368">
-                  <caret line="1744" column="0" selection-start-line="1744" selection-start-column="0" selection-end-line="1744" selection-end-column="0" />
+                <state relative-caret-position="396">
+                  <caret line="4708" column="21" selection-start-line="4708" selection-start-column="21" selection-end-line="4708" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="rings.svg" pinned="false" current-in-tab="true">
+          <file leaf-file-name="rings.svg" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/img/rings.svg">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="308">
@@ -141,8 +121,8 @@
           <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <state relative-caret-position="229">
+                  <caret line="406" column="74" selection-start-line="406" selection-start-column="74" selection-end-line="406" selection-end-column="74" />
                   <folding />
                 </state>
               </provider>
@@ -207,12 +187,12 @@
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/html/__footer.html" />
         <option value="$PROJECT_DIR$/img/rings.svg" />
-        <option value="$PROJECT_DIR$/src/sass/styles.scss" />
-        <option value="$PROJECT_DIR$/src/js/scripts.js" />
-        <option value="$PROJECT_DIR$/src/html/__header.html" />
         <option value="$PROJECT_DIR$/src/html/look-book-advanced.html" />
         <option value="$PROJECT_DIR$/src/html/look-book.html" />
         <option value="$PROJECT_DIR$/src/html/blog2.html" />
+        <option value="$PROJECT_DIR$/src/html/__header.html" />
+        <option value="$PROJECT_DIR$/src/js/scripts.js" />
+        <option value="$PROJECT_DIR$/src/sass/styles.scss" />
       </list>
     </option>
   </component>
@@ -528,12 +508,12 @@
       <workItem from="1466284823741" duration="1684000" />
       <workItem from="1466408132701" duration="502000" />
       <workItem from="1466413441447" duration="299000" />
-      <workItem from="1466430729243" duration="530000" />
+      <workItem from="1466430729243" duration="3670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441616000" />
+    <option name="totallyTimeSpent" value="444756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1048" extended-state="6" />
@@ -698,6 +678,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1606">
           <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,6 +722,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -759,23 +741,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38368">
-          <caret line="1744" column="0" selection-start-line="1744" selection-start-column="0" selection-end-line="1744" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/look-book-#U0444#U0432#U043c#U0444#U0442#U0441#U0443#U0432.html" />
-    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/__footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -788,14 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/html/__header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -826,8 +784,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/html/blog2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        <state relative-caret-position="792">
+          <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/__header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="406" column="74" selection-start-line="406" selection-start-column="74" selection-end-line="406" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="4708" column="21" selection-start-line="4708" selection-start-column="21" selection-end-line="4708" selection-end-column="21" />
           <folding />
         </state>
       </provider>
