@@ -1320,7 +1320,7 @@ div {
       padding: 0px 260px 20px 240px; } }
   @media all and (max-width: 768px) {
     .n-typeHead {
-      padding: 0px 210px 20px 210px; } }
+      padding: 0px 210px 20px 200px; } }
   .n-typeHead span {
     position: relative;
     display: inline-block; }
