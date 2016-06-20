@@ -3551,6 +3551,9 @@ div {
   position: absolute;
   bottom: 44px;
   left: -185px; }
+  @media all and (max-width: 768px) {
+    .n-order__btns {
+      left: -156px; } }
 
 .n-order__item {
   position: relative;

@@ -4663,6 +4663,10 @@ div {
     position: absolute;
     bottom: 44px;
     left: -185px;
+
+    @media all and (max-width: $mob) {
+      left: -156px;
+    }
   }
 
   &__item {
