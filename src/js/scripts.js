@@ -6,7 +6,7 @@ $(window).load(function(){
             $(this).hide();
             $('.page').addClass('loaded');
         });
-    },2000);
+    },0);
 });
 
 $(document).ready(function() {
