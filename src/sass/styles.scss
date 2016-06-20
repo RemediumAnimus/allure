@@ -1588,6 +1588,10 @@ div {
     padding: 0px 260px 20px 240px;
   }
 
+  @media all and (max-width: $mob) {
+    padding: 0px 210px 20px 210px;
+  }
+
   span {
     position: relative;
     display: inline-block;
